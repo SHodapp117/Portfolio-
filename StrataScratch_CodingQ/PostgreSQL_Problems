@@ -1,1 +1,5 @@
+Find doctors with the last name of 'Johnson' in the employee list. The output should contain both their first and last names.
+
+SELECT first_name, last_name FROM employee_list
+WHERE last_name = 'Johnson' AND profession = 'Doctor'
 
