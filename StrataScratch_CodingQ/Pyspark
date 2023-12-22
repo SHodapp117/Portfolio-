@@ -1,0 +1,9 @@
+Find doctors with the last name of 'Johnson' in the employee list. The output should contain both their first and last names.
+
+doctor_list = employee_list.filter(
+    (employee_list["last_name"] == "Johnson")
+    &
+    (employee_list["profession"]== "Doctor")
+)
+result = doctor_list.select("first_name", "last_name").toPandas() 
+
