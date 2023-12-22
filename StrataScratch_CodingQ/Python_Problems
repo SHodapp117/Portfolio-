@@ -1,0 +1,10 @@
+Find doctors with the last name of 'Johnson' in the employee list. The output should contain both their first and last names.
+
+{# Import your libraries
+import pandas as pd
+
+employee_list.head()
+
+result = employee_list.query("last_name == 'Johnson' and profession == 'Doctor'")
+print(result[['first_name', 'last_name']])}
+
