@@ -7,4 +7,17 @@ employee_list.head()
 
 result = employee_list.query("last_name == 'Johnson' and profession == 'Doctor'")
 print(result[['first_name', 'last_name']])}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+You are given a table containing 3 separate assignment scores for students in a class. Write a query that identifies the largest difference in total score of all assignments.
+Output just the difference in total score (sum of all 3 assignments) between a student with the highest score and a student with the lowest score.
 
+
+Solution:
+# Calculate the total score for each student
+df['total_score'] = df['assignment_1'] + df['assignment_2'] + df['assignment_3']
+
+# Find the largest difference in total scores
+max_difference = df['total_score'].max() - df['total_score'].min()
+
+print("Largest difference in total score:", max_difference)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
