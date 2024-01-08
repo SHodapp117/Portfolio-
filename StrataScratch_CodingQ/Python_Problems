@@ -21,3 +21,15 @@ max_difference = df['total_score'].max() - df['total_score'].min()
 
 print("Largest difference in total score:", max_difference)
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Find doctors with the last name of 'Johnson' in the employee list. The output should contain both their first and last names.
+DataFrame: employee_list
+
+Solution:
+# Import your libraries
+import pandas as pd
+employee_list.head()
+doctors_johnson = employee_list[
+    (employee_list["last_name"] == "Johnson")
+    & (employee_list["profession"] == "Doctor")
+]
+doctors_johnson = doctors_johnson[["first_name", "last_name"]]
