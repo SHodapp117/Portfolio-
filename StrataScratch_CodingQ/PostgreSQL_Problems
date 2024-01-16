@@ -1,7 +1,7 @@
 Find doctors with the last name of 'Johnson' in the employee list. The output should contain both their first and last names.
 
 SELECT first_name, last_name FROM employee_list
-WHERE last_name = 'Johnson' AND profession = 'Doctor'
+WHERE last_name = 'Johnson' AND profession = 'Doctor';
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Find the total cost of each customer's orders. Output customer's id, first name, and the total order cost. Order records by customer's first name alphabetically.
 
@@ -30,7 +30,7 @@ Sort records by the year and the NOC in ascending order.
 SELECT noc, min(year) AS first_time_year 
 FROM olympics_athletes_events 
 GROUP BY noc 
-ORDER BY first_time_year, noc
+ORDER BY first_time_year, noc;
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Find the last time each bike was in use. Output both the bike number and the date-timestamp of the bike's last use (i.e., the date-time the bike was returned). 
 Order the results by bikes that were most recently used.
@@ -49,5 +49,4 @@ Find the total number of records that belong to each variety in the dataset. Out
 SELECT count(variety) AS count_variety, variety 
 FROM iris
 GROUP BY variety
-ORDER BY variety, count_variety 
-;
+ORDER BY variety, count_variety;
