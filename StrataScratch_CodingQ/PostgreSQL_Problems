@@ -19,3 +19,35 @@ FROM ms_employee_salary
 GROUP BY
 id,first_name,last_name,department_id
 ORDER BY id ASC;
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Find all inspections which are part of an inactive program.
+select * from los_angeles_restaurant_health_inspections
+WHERE program_status = 'INACTIVE';
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Order all countries by the year they first participated in the Olympics. Output the National Olympics Committee (NOC) name along with the desired year.
+Sort records by the year and the NOC in ascending order.
+
+SELECT noc, min(year) AS first_time_year 
+FROM olympics_athletes_events 
+GROUP BY noc 
+ORDER BY first_time_year, noc
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Find the last time each bike was in use. Output both the bike number and the date-timestamp of the bike's last use (i.e., the date-time the bike was returned). 
+Order the results by bikes that were most recently used.
+
+SELECT DISTINCT(bike_number), end_time
+FROM dc_bikeshare_q1_2012
+ORDER BY end_time DESC;
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Find the gender that has made the most number of doctor appointments. Output the gender along with the corresponding number of appointments.
+select count(gender) AS count_gender, gender
+from medical_appointments
+GROUP BY gender
+ORDER BY count_gender DESC;
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Find the total number of records that belong to each variety in the dataset. Output the variety along with the corresponding number of records. Order records by the variety in ascending order.
+SELECT count(variety) AS count_variety, variety 
+FROM iris
+GROUP BY variety
+ORDER BY variety, count_variety 
+;
