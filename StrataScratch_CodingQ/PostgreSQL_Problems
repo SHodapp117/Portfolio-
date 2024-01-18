@@ -50,3 +50,28 @@ SELECT count(variety) AS count_variety, variety
 FROM iris
 GROUP BY variety
 ORDER BY variety, count_variety;
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Compare each employee's salary with the average salary of the corresponding department.
+Output the department, first name, and salary of employees along with the average salary of that department.
+
+SELECT first_name, department, salary, AVG(salary) over (PARTITION BY department)
+FROM employee
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Find order details made by Jill and Eva. Consider the Jill and Eva as first names of customers. Output the order date, details and cost along with the first name.
+Order records based on the customer id in ascending order.
+SELECT customers.first_name,
+       order_date,
+       order_details,
+       total_order_cost
+FROM orders
+JOIN customers ON customers.id = orders.cust_id
+WHERE customers.first_name IN ('Jill',
+                               'Eva')
+ORDER BY cust_id;
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Find libraries who haven't provided the email address in circulation year 2016 but their notice preference definition is set to email.
+Output the library code.
+
+SELECT DISTINCT(home_library_code)
+FROM library_usage
+WHERE circulation_active_year = 2016 AND notice_preference_code = 'z' AND provided_email_address = FALSE
