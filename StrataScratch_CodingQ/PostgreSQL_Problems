@@ -75,3 +75,13 @@ Output the library code.
 SELECT DISTINCT(home_library_code)
 FROM library_usage
 WHERE circulation_active_year = 2016 AND notice_preference_code = 'z' AND provided_email_address = FALSE
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Find the most profitable company from the financial sector. Output the result along with the continent.
+SELECT company, continent
+FROM forbes_global_2010_2014
+WHERE sector = 'Financials'
+  AND profits =
+    (SELECT MAX(profits)
+     FROM forbes_global_2010_2014
+     WHERE sector = 'Financials')
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
