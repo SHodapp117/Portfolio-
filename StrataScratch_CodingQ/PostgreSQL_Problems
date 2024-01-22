@@ -109,3 +109,9 @@ Find all Lyft drivers who earn either equal to or less than 30k USD or equal to 
 SELECT * <<I only used the star because the problem explicitly askes for all info to be returned, otherwise I would choose a more economical operational selection>>
 FROM lyft_drivers
 WHERE yearly_salary <= 30000 OR yearly_salary >= 70000 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Find the number of rows for each review score earned by 'Hotel Arena'. Output the hotel name (which should be 'Hotel Arena'), review score along with the corresponding number of rows with that score for the specified hotel.
+SELECT hotel_name, reviewer_score, count(*)
+FROM hotel_reviews
+WHERE hotel_name = 'Hotel Arena'
+GROUP BY hotel_name, reviewer_score
