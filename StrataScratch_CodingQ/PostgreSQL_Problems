@@ -97,3 +97,9 @@ FROM fb_comments_count
 WHERE created_at BETWEEN '2020-02-10'::date - 30 * INTERVAL '1 day' AND '2020-02-10'::date
 GROUP BY user_id
 HAVING sum(number_of_comments) > 0
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Find how many times each artist appeared on the Spotify ranking list Output the artist name along with the corresponding number of occurrences. Order records by the number of occurrences in descending order.
+SELECT artist, COUNT(artist) as artist_count
+FROM spotify_worldwide_daily_song_ranking
+GROUP BY artist 
+ORDER BY artist DESC
