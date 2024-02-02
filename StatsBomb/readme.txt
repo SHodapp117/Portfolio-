@@ -1,4 +1,5 @@
 Project Report 
+VIDEO LINK: https://youtu.be/Hl7MM-jT51g
 Phase One: Establishing baselines:
 
 * Took the Statsbomb Intro to Football Analytics to familiarize myself with core concepts and vocabulary.
