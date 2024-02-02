@@ -7,7 +7,7 @@ Phase One: Establishing baselines:
 
 Phase Two: Project Selection
 
-* Had conversations with Grant Rhines, Harrison Greenfield & Calvin Smith to learn more about AGM and role + expectations. Ran proposed project past them, revised to do an opposition analysis to highlight spatiotemporal analysis along with visualization skill, as asked for in the job description.
+* Had conversations with Grant Rhines, Harrison Greenfield & Calvin Smith to learn more about current AGM and role + expectations. Ran proposed project past them, revised to do an opposition analysis to highlight spatiotemporal analysis along with visualization skill, as asked for in the job description.
 * Performed EDA for Spain vs. Switzerland to gain a baseline understanding of information recorded and explore possible angles of dissection.
 * Began developing a core theme to explore and focused on the PowerPoint format to highlight the ability to explain technical findings to a non-technical audience.
 * Took a full 24 hrs to think and reflect on decisions to ensure solid logic and reasoning.
