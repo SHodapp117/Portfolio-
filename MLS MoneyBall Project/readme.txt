@@ -11,3 +11,6 @@ designed to identify boundary players who surpass anticipated performance levels
 These clusters are delineated based on positional roles and the distribution of performance expectations.
 The intended effect is to enable an end user to provide a suitable short list of players who fit a certain criterion asked for by coaching staff 
 (i.e. ‘A ball playing center back replacement’) 
+
+
+This project is on hold as I am currently interviewing 1/26
