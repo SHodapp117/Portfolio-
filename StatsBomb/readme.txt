@@ -18,7 +18,7 @@ Phase Three: Building
 
 * Developed the key report utilizing skills in Python to develop reproducible and automatable code cells.
 * Decided to record the presentation to highlight thinking and 'soccer knowledge' without overrunning the word limit on the project report.
-* Project was completed on 2/1.
+* Project was completed on 2/1 11:51PM
 
 
 
