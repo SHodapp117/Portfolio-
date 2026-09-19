@@ -13,4 +13,3 @@ The intended effect is to enable an end user to provide a suitable short list of
 (i.e. ‘A ball playing Left footed center back replacement’) 
 
 
-This project is on hold as I am currently interviewing 1/26
