@@ -1,2 +1,2 @@
 # Portfolio-
-A collection of work that show cases my skill and ability 
+Data science project work: MLS analytics, NFT pricing models, and visualization.
